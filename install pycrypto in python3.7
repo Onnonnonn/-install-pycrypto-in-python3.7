@@ -1,0 +1,49 @@
+first , input "pip install pycrypto" in your cmd
+在 cmd 輸入 "pip install pycrypto"
+
+
+case 1 :
+  install successful !
+  and you are fine
+  
+  
+case 2 :
+  lask of C++
+  缺少 C++
+  
+  install Visual Studio Code Community at https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16#
+  choose desktop development with C++
+  安裝 Visual Studio Code Community 再選擇裡面的C++工具
+  
+  input "pip install pycrypto" in your cmd
+  再次在 cmd 輸入 "pip install pycrypto"
+
+
+case 3 :
+  building ‘Crypto.Random.OSRNG.winrandom‘ extension
+  ........BIN\\x86_amd64\\cl.exe‘ failed with exit status 2
+  
+  go to user variable 
+  add VCINSTALLDIR as variable
+  add "C:\Progarm Filse (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905" as value(without"") , or the dir where you can find "include\stdint.h"
+  input "CL=-FI"%VCINSTALLDIR%\include\stdint.h" at cmd
+  input "pip install pycrypto" in your cmd
+  
+  新增使用者變數
+  變數 -> VCINSTALLDIR
+  值 -> C:\Progarm Filse (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905 , 或是找的到叫include且裡面有stdint.h的位置
+  在cmd 輸入CL=-FI"%VCINSTALLDIR%\include\stdint.h
+  再次在 cmd 輸入 "pip install pycrypto"
+  
+  
+Reference/參考 :
+  
+    https://blog.csdn.net/a624806998/article/details/78596543
+    https://stackoverflow.com/questions/41843266/microsoft-windows-python-3-6-pycrypto-installation-error
+    
+    
+ 
+ 額外補充 :
+    
+    no moudle winrandom
+    https://stackoverflow.com/questions/24804829/no-module-named-winrandom-when-using-pycrypto
